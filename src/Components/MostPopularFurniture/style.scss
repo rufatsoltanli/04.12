@@ -1,0 +1,82 @@
+#mostPopularFurniture {
+    background-color: #F9F9FF;
+
+    .mostPopularFurnitureCont {
+        margin: 0 auto;
+        max-width: 80%;
+        display: flex;
+        flex-direction: column;
+        padding: 8% 0;
+    }
+
+    .textCont {
+        align-self: center;
+        text-align: center;
+
+        h1 {
+            font-size: 32px;
+            padding: 10px;
+        }
+
+        .mostPopularFurnitureDescription {
+            padding: 10px;
+            color: rgb(107, 107, 107);
+            max-width: 60%;
+            margin: 0 auto;
+        }
+    }
+
+    .mostPopularFurnitureSofasCont {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+
+        .mostPopularFurnitureSofa {
+            img{
+                width: 100%;
+            }
+            h4 {
+                transition: .5s;
+                font-size: 20px;
+                width: max-content;
+            }
+
+            .text {
+                color: rgb(170, 170, 170);
+            }
+
+            * {
+                padding: 10px 0;
+            }
+
+            &:hover h4 {
+                color: orange;
+                cursor: pointer;
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .mostPopularFurnitureCont {
+        max-width: 100%;
+
+        .mostPopularFurnitureSofasCont {
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+
+
+            .mostPopularFurnitureSofa {
+                display: grid;
+                place-items: center;
+            }
+        }
+
+        .text {
+            width: 70%;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+footer {
+    background-color: rgb(41, 41, 41);
+
+    .footerCont {
+        padding: 5% 0;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 2fr 1fr;
+        gap: 20px;
+
+        h1 {
+            color: white;
+        }
+
+        .text {
+            color: gray;
+        }
+
+        .copyRight {
+            color: gray;
+        }
+
+        .aboutMe {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .content {
+
+
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        .newsLetter {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .eMail {
+                    background-color: white;
+                    max-width: max-content;
+                    display: flex;
+
+
+                    .orangeButton {
+                        border-radius: 0;
+                    }
+
+
+                    input {
+                        padding: 10px 20px;
+                        font-size: 18px;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        .followMe {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .icons {
+                    padding: 0;
+
+                    ul {
+                        padding: 0;
+                        display: flex;
+                        gap: 24px;
+
+                        i {
+                            font-size: 20px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .footerCont {
+        width: auto;
+        grid-template-columns: 1fr !important;
+
+    }
+}

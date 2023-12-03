@@ -1,0 +1,77 @@
+#responsiveNav {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    #responsiveNav {
+        display: block;
+        // background-color: rgb(255, 255, 255);
+        padding: 20px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+
+        .resNavCont {
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
+
+            .navHamburger {
+                // position: relative;
+
+                .navDropDown {
+                    position: absolute;
+                    top: 68px;
+                    left: 0;
+                    width: 100%;
+                    opacity: 0;
+                    padding: 10px 20px 10px 20px;
+                    background-color: rgb(255, 255, 255);
+                    transition: .5s;
+                    overflow: hidden;
+
+                    .links {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        a {
+                            color: black;
+                        }
+
+                        .linkWithDropDown:hover .dropDown {
+                            display: block;
+                            opacity: 1;
+
+                        }
+
+                        div {
+                            border-bottom: 1px solid gray;
+
+                        }
+
+                        .contact {
+                            border: none;
+                        }
+
+                        .dropDown {
+                            transition: .5s;
+                            padding: 10px;
+                            opacity: 0;
+                            display: none;
+                            background-color: rgba(224, 224, 224, 0.774);
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navDropDownVisible {
+
+    overflow: visible !important;
+    opacity: 1 !important;
+
+}

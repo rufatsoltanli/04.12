@@ -1,0 +1,145 @@
+nav {
+
+    .navTop {
+        width: 80%;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.356);
+        color: white;
+
+        .navTopCont {
+            padding: 10px 20px;
+
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                ul {
+                    font-size: 15px;
+
+                    li {
+                        transition: .5s;
+
+                        &:hover {
+                            cursor: pointer;
+                            color: rgb(231, 163, 37);
+                        }
+                    }
+
+                }
+            }
+
+            .leftSide ul {
+                display: flex;
+                gap: 30px;
+            }
+
+            .rightSide ul {
+                display: flex;
+                gap: 15px;
+            }
+        }
+    }
+
+    .navBot {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+
+        .navLogo {
+            outline: none;
+        }
+
+        .links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+
+
+            .linkWithDropDown:hover .dropDown {
+                // display: block;
+                opacity: 1;
+                transition: .3s;
+                transform: translateY(0) !important;
+            }
+
+            .linkWithDropDown:hover .dropDown ul {
+                transition: .3s;
+                opacity: 1;
+                transform: translateY(0) !important;
+                display: block;
+
+            }
+
+            .NavLinks {
+                position: relative;
+                color: white;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                a {
+                    color: white;
+                }
+
+                .dropDown {
+                    opacity: 0;
+                    // padding-top: 10px;
+                    position: absolute;
+                    transition: .3s;
+                    transform: translateY(6.3rem) !important;
+
+                    ul {
+                        display: none;
+
+                        transition: .3s;
+                        opacity: 0;
+                        transform: translateY(6.3rem) !important;
+
+                        width: 200px;
+                        margin-top: 25px;
+                        background-color: white;
+
+                        li {
+                            a {
+                                color: black;
+                            }
+
+                            color: rgb(0, 0, 0);
+                            padding: 15px;
+                            border-bottom: 1px solid gray;
+                            transition: .4s;
+
+                            &:hover {
+                                background-color: orange;
+                                color: aliceblue;
+                                border-bottom: 1px solid orange;
+
+                            }
+                            &:hover a{
+                                color:aliceblue;
+                            }
+                        }
+
+                       
+
+                        .last_li {
+                            border: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+        display: none;
+    }
+}

@@ -1,0 +1,100 @@
+#contactPage {
+    header {
+        background-image: url("https://preview.colorlib.com/theme/woodrox/img/banner/home-banner.jpg.webp");
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        min-height: 60vh;
+
+    }
+
+    .contactPageCont {
+        margin: 0 auto;
+        width: 80%;
+        padding: 8% 0;
+
+        .map {
+            width: 100%;
+        }
+
+        .contactSection {
+            display: flex;
+            justify-content: space-between;
+            padding: 5% 0 0 0;
+            gap: 10px;
+
+            .part1 {
+                display: flex;
+                gap: 30px;
+                flex-direction: column;
+
+
+                .parts {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+
+                    .icon {
+                        color: rgb(165, 165, 66);
+                        font-size: 26px;
+                    }
+
+                    .rightSide {
+                        display: flex;
+                        flex-direction: column;
+
+
+                        .spanDescription {
+                            color: rgb(165, 165, 165);
+                        }
+                    }
+                }
+            }
+
+            .part2 {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                input {
+                    width: 300px;
+                    padding: 10px 10px;
+                    border: 1px solid gray;
+                }
+            }
+
+            .part3 {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                textarea {
+                    border: 1px solid gray;
+                }
+
+                .button {
+                    display: flex;
+                    justify-content: right;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contactSection {
+        .part2 {
+
+
+            input {
+                align-self: center;
+                width: 200px;
+
+
+
+            }
+        }
+
+        flex-direction: column;
+    }
+}

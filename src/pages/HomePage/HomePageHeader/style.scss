@@ -1,0 +1,108 @@
+.homePageHeaderContent {
+    max-width: 80%;
+    margin: 7% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .leftSide {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .text1 {
+            font-weight: 900;
+            font-size: 32px;
+            max-width: 450px;
+            color: white;
+
+        }
+
+        .text2 {
+            max-width: 550px;
+
+            color: white;
+        }
+    }
+
+    .rightSide {
+        .iconsCont {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 1px solid rgb(187, 187, 187);
+            background-color: rgba(68, 68, 68, 0.521);
+            border-radius: 15px;
+            padding: 30px;
+
+            .icon {
+                width: 120px;
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: .5s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: orange;
+                }
+
+                i {
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+
+            .n1 {
+                border-right: 1px solid rgb(187, 187, 187);
+                border-bottom: 1px solid rgb(187, 187, 187);
+                border-top-left-radius: 12px;
+
+            }
+
+            .n2 {
+                border-bottom: 1px solid rgb(187, 187, 187);
+                border-top-right-radius: 12px;
+
+            }
+
+            .n3 {
+                border-right: 1px solid rgb(187, 187, 187);
+                border-bottom: 1px solid rgb(187, 187, 187);
+            }
+
+            .n4 {
+                border-bottom: 1px solid rgb(187, 187, 187);
+            }
+
+            .n5 {
+                border-right: 1px solid rgb(187, 187, 187);
+                border-bottom-left-radius: 12px;
+
+            }
+
+            .n6 {
+                border-bottom-right-radius: 12px;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .homePageHeaderContent {
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .leftSide{
+            align-items: center;
+        }
+    }
+
+    .iconsCont {
+        padding: 0 !important;
+    }
+}

@@ -1,0 +1,47 @@
+#lavanderAmbient {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 8% 0;
+gap: 100px;
+    .sides {
+        display: flex;
+        justify-content: space-between;
+
+        .leftSide {
+            img {
+                max-width: 555px;
+            }
+        }
+
+        .rightSide {
+            width: 50%;
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+
+            .info {
+                display: flex;
+                justify-content: space-between;
+                width: 40%;
+
+                .infoLeftSide {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                }
+
+                .infoRightSide {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    i {
+                        color: rgb(177, 177, 74);
+                    }
+                }
+            }
+        }
+    }
+}

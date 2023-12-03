@@ -1,0 +1,37 @@
+#LookingForAQuality {
+    background-image: url("https://preview.colorlib.com/theme/woodrox/img/notify-bg.jpg.webp");
+    background-repeat: no-repeat;
+
+    .sectionCont {
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        min-height: 50vh;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .text {
+        
+            color: white;
+            width: 60%;
+            align-self: center;
+        }
+
+        h1 {
+            color: white;
+
+            font-size: 40px;
+
+        }
+    }
+
+}
+@media only screen and (max-width: 1000px) {
+    #LookingForAQuality{
+        .sectionCont{
+            flex-direction: column;
+        }
+    }
+  }

@@ -1,0 +1,38 @@
+#labels {
+    padding: 7% 0%;
+    background-color: aliceblue;
+
+    .sectionCont {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 130px;
+            opacity: 0.5;
+            transition: .5s;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #labels {
+        .sectionCont {
+            justify-content: center;
+            img {
+                display: none;
+            }
+
+            .visible {
+                display: block;
+
+            }
+        }
+    }
+}

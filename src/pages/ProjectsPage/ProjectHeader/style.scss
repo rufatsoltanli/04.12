@@ -1,0 +1,25 @@
+.projectPageHeaderCont  {
+    display: grid;
+    place-items: center;
+    padding: 100px;
+
+    .text {
+        text-align: center;
+        
+        color: white;
+
+        a {
+            color: white;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+        .links{
+            padding: 5px;
+            *{
+                padding: 0 5px;
+            }
+        }
+    }
+}

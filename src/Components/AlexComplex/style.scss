@@ -1,0 +1,71 @@
+.AlexCardsCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 1fr;
+    min-height: 40vh;
+
+    .AlexCard {
+        position: relative;
+        background-image: url("https://preview.colorlib.com/theme/woodrox/img/projects/projects-3.jpg.webp");
+        object-fit: cover;
+        transition: .7s !important;
+
+        &:hover {
+            .dropUp {
+                // display: block;
+                opacity: 1;
+                transform: translateY(-6.3rem);
+                height: auto;
+                transition: .7s !important;
+            }
+        }
+
+        .dropUp {
+            // display: none;
+            transition: .7s !important;
+            // padding: 30px;
+
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            bottom: -6.3rem;
+            position: absolute;
+            background-color: orange;
+            // padding: 30px;
+
+            h3 {
+                padding: 20px 30px;
+            }
+
+            div {
+                padding: 20px 30px;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .AlexCardsCont {
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+        .n3 {
+            display: none;
+        }
+
+        .AlexCard {
+            height: 250px;
+            .dropUp {
+
+
+                h3 {
+                    padding: 0;
+                }
+
+                div {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

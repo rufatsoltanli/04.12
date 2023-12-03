@@ -1,0 +1,53 @@
+#brandNewApp {
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8% 0;
+
+    .leftSide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .smallTitle {
+            color: #C8B069;
+            font-size: 14px;
+            font-weight: 900;
+        }
+
+        .mainTitle {
+            font-weight: 900;
+            font-size: 30px;
+            width: 350px;
+        }
+
+        .description {
+            font-weight: 900;
+        }
+
+        .text {
+            width: 80%;
+        }
+    }
+
+    .rightSide {
+        max-width: 555px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #brandNewApp {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+
+        .leftSide {
+            gap: 30px;
+            align-items: center;
+        }
+    }
+}
